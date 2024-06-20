@@ -128,9 +128,11 @@ html, #body-index {
   text-align: center;
 }
 
-.menu-section{
+.menu-section {
   width: 100%;
+  border:  1px solid white;
 }
+
 .menu-section h2 {
   background-color: red !important;
   color: black;
@@ -153,8 +155,10 @@ div.menu-item {
 }
 
 .description {
+  text-align: left;
   align-self: flex-start;
   padding-bottom: 10px;
+  padding-right: 100px;
 }
 
 p.food {
