@@ -6,6 +6,7 @@ $button-color: rgba(51, 51, 51, 0.867);
   padding: 0;
 }
 
+
 html, #body-index {
   height: 100%;
   font-family: 'Andada Pro';
@@ -17,6 +18,7 @@ html, #body-index {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #body-menu {
@@ -30,6 +32,7 @@ html, #body-index {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  padding-bottom: 20px;
 }
 
 #restaurant-name {
@@ -43,6 +46,8 @@ html, #body-index {
 /* Style the top navigation bar */
 .topnav {
   background-color: $button-color;
+  display: flex;
+  flex-direction: row;
 }
 
 #menu-topnav {
@@ -51,7 +56,7 @@ html, #body-index {
 
 /* Style the topnav links */
 .topnav a {
-  float: left;
+  justify-content: flex-start;
   display: block;
   color: rgba(242, 242, 242, 0.647);
   text-align: center;
@@ -68,6 +73,7 @@ html, #body-index {
 
 /* Style the content */
 .content {
+  box-sizing: border-box;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -76,6 +82,7 @@ html, #body-index {
   color: white;
   padding: 10px;
   text-align: center;
+  min-height: 100vw;
 }
 
 .content a {
@@ -90,15 +97,17 @@ html, #body-index {
 #content-menu {
   margin: 0px 10%;
   background-color: black;
-  outline-color: white;
-  outline-width: 5px;
-  background-color: white;
-  display: flex;
+  // background-color: white;
+  // display: flex;
   flex-direction: column;
   align-items: center;
   
   margin-top: 75px;
   text-align: center;
+}
+
+.menu-container {
+  display: flex;
 }
 
 .content h2 {
@@ -130,7 +139,7 @@ html, #body-index {
 
 .menu-section {
   width: 100%;
-  border:  1px solid white;
+  margin: 0;
 }
 
 .menu-section h2 {
@@ -144,6 +153,7 @@ html, #body-index {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 div.menu-item {
@@ -151,7 +161,8 @@ div.menu-item {
   flex-direction: column; /* Column direction to keep description on its own line */
   // margin-top: 10px;
   padding: 0px 10px;
-  margin: 10px 0px;
+  // margin: 10px 0px;
+  background-color: white;
 }
 
 .description {
@@ -177,4 +188,15 @@ hr {
   border: none; /* Remove default border */
   height: 2px; /* Set height */
   background-color: #f1f1f1; /* Set color */
+}
+
+@media (max-width: 768px) {
+  .content h2 {
+    font-size: 18vw;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+  }
 }
