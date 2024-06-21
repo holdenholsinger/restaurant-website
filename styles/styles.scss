@@ -27,6 +27,10 @@ html, #body-index {
     background-color: black;
 }
 
+#body-about {
+  background-color: #e5845abd!important;
+}
+
 /* Wrapper to use flexbox for layout */
 .wrapper {
   display: flex;
@@ -77,10 +81,11 @@ html, #body-index {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
   color: white;
   padding: 10px;
+  padding-top: 50px;
   text-align: center;
   min-height: 100vw;
 }
@@ -93,7 +98,9 @@ html, #body-index {
   background-color: $button-color;
 }
 
-
+#about-us {
+  background-color: #e5845abd;
+}
 #content-menu {
   margin: 0px 10%;
   background-color: black;

@@ -24,6 +24,10 @@ html, #body-index {
   background-color: black;
 }
 
+#body-about {
+  background-color: rgba(229, 132, 90, 0.7411764706) !important;
+}
+
 /* Wrapper to use flexbox for layout */
 .wrapper {
   display: flex;
@@ -74,10 +78,10 @@ html, #body-index {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: white;
   padding: 10px;
+  padding-top: 50px;
   text-align: center;
   min-height: 100vw;
 }
@@ -88,6 +92,10 @@ html, #body-index {
   padding: 14px 16px;
   text-decoration: none;
   background-color: rgba(51, 51, 51, 0.867);
+}
+
+#about-us {
+  background-color: rgba(229, 132, 90, 0.7411764706);
 }
 
 #content-menu {
