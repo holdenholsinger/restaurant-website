@@ -24,11 +24,15 @@ html, #body-index {
 #body-menu {
     height: 100%;
     background-image: none;
-    background-color: black;
+    background-color: rgb(199, 64, 64);
 }
 
 #body-about {
-  background-color: #db5e29bd!important;
+  background-color: #db5e29bd;
+}
+
+#body-contact {
+  background-color: rgb(96, 125, 139) !important;
 }
 
 /* Wrapper to use flexbox for layout */
@@ -45,7 +49,7 @@ html, #body-index {
 
 #restaurant-name {
   color: white;
-  background-color: black;
+  background-color: rgb(199, 64, 64);
   width: 100%;
   font-size: 3.5em;
   padding-bottom: 50px;
@@ -59,7 +63,38 @@ html, #body-index {
 }
 
 #menu-topnav {
-    background-color: black;
+    background-color: $button-color;
+}
+
+#contact-message {
+  background-color: rgba(0,0,0,0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.field-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.field-container > * {
+  padding: 10px;
+}
+
+input, textarea {
+  font-family: 'Andada Pro';
+  font-size: 22px;
+  width: 296px;
+}
+
+textarea {
+  height: 300px !important;
 }
 
 /* Style the topnav links */
@@ -109,6 +144,10 @@ html, #body-index {
   margin-bottom: 30px;
 }
 
+label {
+  align-self: flex-start;
+}
+
 #content-menu {
   margin: 0px 10%;
   background-color: black;
@@ -128,11 +167,11 @@ html, #body-index {
 .content h2 {
   font-size: 4em;
   color: white;
-  text-shadow: 
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; /* Creates a black outline */
+  // text-shadow: 
+  //   -1px -1px 0 #000,  
+  //   1px -1px 0 #000,
+  //   -1px 1px 0 #000,
+  //   1px 1px 0 #000; /* Creates a black outline */
   margin: 40px;
 }
 
@@ -158,9 +197,13 @@ html, #body-index {
 }
 
 .menu-section h2 {
-  background-color: red !important;
+  background-color: rgb(43 150 135) !important;
   color: black;
   text-align: center;
+}
+
+textarea {
+  height: 20vh !important;
 }
 
 .menu-item-top {
@@ -171,6 +214,15 @@ html, #body-index {
   padding-top: 10px;
   justify-content: space-between;
   text-align: left;
+}
+
+#submit-button {
+  justify-content: flex-end !important;
+}
+
+#submit-button input {
+  background-color: $button-color;
+  color: white;
 }
 
 div.menu-item {
@@ -234,6 +286,28 @@ hr {
   }
 
   #wrapper-about {
-    text-align: left;
+    font-size: 1em;
+  }
+
+  .field-container {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: normal;
+  }
+
+  // form {
+  //   width: 80vw;
+  // }
+  input, textarea {
+    width: 80vw;
+    border: 0;
+  }
+
+  // input {
+  //   padding-left: 0 !important;
+  // }
+
+  label {
+    padding-left: 0px !important;
   }
 }
