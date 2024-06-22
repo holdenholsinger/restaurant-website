@@ -28,7 +28,7 @@ html, #body-index {
 }
 
 #body-about {
-  background-color: #e5845abd!important;
+  background-color: #db5e29bd!important;
 }
 
 /* Wrapper to use flexbox for layout */
@@ -37,6 +37,10 @@ html, #body-index {
   flex-direction: column;
   min-height: 100%;
   padding-bottom: 20px;
+}
+
+#wrapper-about {
+  padding-bottom: 50px;
 }
 
 #restaurant-name {
@@ -98,16 +102,20 @@ html, #body-index {
   background-color: $button-color;
 }
 
-#about-us {
-  background-color: #e5845abd;
+.about-us {
+  background-color: #e5845abd !important;
+  text-align: left;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
+
 #content-menu {
   margin: 0px 10%;
   background-color: black;
   // background-color: white;
   // display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   
   margin-top: 75px;
   text-align: center;
@@ -152,7 +160,7 @@ html, #body-index {
 .menu-section h2 {
   background-color: red !important;
   color: black;
-  padding: 10px 0;
+  text-align: center;
 }
 
 .menu-item-top {
@@ -161,6 +169,8 @@ html, #body-index {
   width: 100%;
   margin-bottom: 10px;
   padding-top: 10px;
+  justify-content: space-between;
+  text-align: left;
 }
 
 div.menu-item {
@@ -189,6 +199,18 @@ p.price {
   padding: 5px;
   border-radius: 5px;
   color: white;
+  max-height: 36px;
+}
+
+#chef-photo {
+  object-fit: contain;
+  max-width: 80vw;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+#content-container{
+  padding: 0 10%;
 }
 
 hr {
@@ -205,5 +227,13 @@ hr {
   .topnav {
     display: flex;
     flex-direction: column;
+  }
+
+  #content-menu {
+    margin: 0 5%;
+  }
+
+  #wrapper-about {
+    text-align: left;
   }
 }
