@@ -107,6 +107,19 @@ textarea {
   text-decoration: none;
 }
 
+#buttons {
+  background-color: rgb(199, 64, 64);
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  height: 2em;
+}
+
+#buttons button {
+  width: 33%;
+  font-family: 'Andada Pro';
+}
+
 /* Change color on hover */
 .topnav a:hover, .content a:hover {
   background-color: #ddd;
