@@ -1,12 +1,5 @@
-let menuContainer = document.querySelector('.menu-container')
+const menuContainer = document.querySelector('.menu-container')
 
-let pizzaButton = document.querySelector('#pizzas')
-let pastaButton = document.querySelector('#pastas')
-let saladButton = document.querySelector('#salads')
-
-pastaButton.onclick = showPastas
-pizzaButton.onclick = showPizzas
-saladButton.onclick = showSalads
 
 const menuSectionsHtml = {
   'pastas': `
@@ -127,26 +120,26 @@ const menuSectionsHtml = {
     </div>`
 }
 
-function showPastas() {
-    
-    menuContainer.innerHTML = menuSectionsHtml['pastas']
+
+let menuButtons = document.querySelectorAll('.menu-button')
+
+function showMenu(id) {
+  menuContainer.innerHTML = menuSectionsHtml[id];
+}
+
+function highlightOnlyActive(event) {
+  
+  let activeButton = event.target
+  menuButtons.forEach(button => {
+    button.classList.remove('active-background');});
+  activeButton.classList.add('active-background')
 
 }
 
-function showPizzas() {
-    
-  menuContainer.innerHTML = menuSectionsHtml['pizzas']
 
-}
-
-function showSalads() {
-    
-  menuContainer.innerHTML = menuSectionsHtml['salads']
-
-}
-
-console.log(menuSectionsHtml['pastas'])
-
-
-
-// function to add button coloring when actively clicked
+menuButtons.forEach(button => {
+  button.addEventListener('click', event=> {
+    highlightOnlyActive(event);
+    showMenu(button.id);
+  });
+});
