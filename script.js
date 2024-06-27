@@ -146,3 +146,11 @@ function showSalads() {
 }
 
 console.log(menuSectionsHtml['pastas'])
+
+function clearButtonBackground() {
+  let menuButtons = document.getElementsByClassName('menu-button')
+  for (let i=0; i < menuButtons.length; i++);
+    // change the class of every element to have the normal background
+}
+
+// function
