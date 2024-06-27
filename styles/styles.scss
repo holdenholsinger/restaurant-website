@@ -1,20 +1,17 @@
-$button-color: rgba(51, 51, 51, 0.867);
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
 html, #body-index {
   height: 100%;
-  font-family: 'Andada Pro';
+  font-family: "Andada Pro";
   font-size: 22px;
 }
 
 #body-index {
-  background-image: url('../assets/hero.jpg');
+  background-image: url("../assets/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,13 +19,13 @@ html, #body-index {
 }
 
 #body-menu {
-    height: 100%;
-    background-image: none;
-    background-color: rgb(199, 64, 64);
+  height: 100%;
+  background-image: none;
+  background-color: rgb(199, 64, 64);
 }
 
 #body-about {
-  background-color: #db5e29bd;
+  background-color: rgba(219, 94, 41, 0.7411764706);
 }
 
 #body-contact {
@@ -47,6 +44,14 @@ html, #body-index {
   padding-bottom: 50px;
 }
 
+.clear-background {
+  background-color: (240, 240, 240);
+}
+
+.active-background {
+  background-color: yellow;
+}
+
 #restaurant-name {
   color: white;
   background-color: rgb(199, 64, 64);
@@ -57,17 +62,17 @@ html, #body-index {
 
 /* Style the top navigation bar */
 .topnav {
-  background-color: $button-color;
+  background-color: rgba(51, 51, 51, 0.867);
   display: flex;
   flex-direction: row;
 }
 
 #menu-topnav {
-    background-color: $button-color;
+  background-color: rgba(51, 51, 51, 0.867);
 }
 
 #contact-message {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 form {
@@ -88,7 +93,7 @@ form {
 }
 
 input, textarea {
-  font-family: 'Andada Pro';
+  font-family: "Andada Pro";
   font-size: 22px;
   width: 296px;
 }
@@ -117,7 +122,7 @@ textarea {
 
 #buttons button {
   width: 33%;
-  font-family: 'Andada Pro';
+  font-family: "Andada Pro";
 }
 
 /* Change color on hover */
@@ -133,7 +138,6 @@ textarea {
   flex: 1;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   color: white;
   padding: 10px;
@@ -147,11 +151,11 @@ textarea {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: $button-color;
+  background-color: rgba(51, 51, 51, 0.867);
 }
 
 .about-us {
-  background-color: #e5845abd !important;
+  background-color: rgba(229, 132, 90, 0.7411764706) !important;
   text-align: left;
   font-size: 30px;
   margin-bottom: 30px;
@@ -164,32 +168,25 @@ label {
 #content-menu {
   margin: 0px 10%;
   background-color: black;
-  // background-color: white;
-  // display: flex;
   flex-direction: column;
   align-items: left;
-  
   margin-top: 75px;
   text-align: center;
 }
 
 .menu-container {
   display: flex;
+  width: 100%;
 }
 
 .content h2 {
   font-size: 4em;
   color: white;
-  // text-shadow: 
-  //   -1px -1px 0 #000,  
-  //   1px -1px 0 #000,
-  //   -1px 1px 0 #000,
-  //   1px 1px 0 #000; /* Creates a black outline */
   margin: 40px;
 }
 
 .content p {
-  background-color: $button-color;
+  background-color: rgba(51, 51, 51, 0.867);
   padding: 10px;
 }
 
@@ -210,7 +207,7 @@ label {
 }
 
 .menu-section h2 {
-  background-color: rgb(43 150 135) !important;
+  background-color: rgb(43, 150, 135) !important;
   color: black;
   text-align: center;
 }
@@ -234,16 +231,14 @@ textarea {
 }
 
 #submit-button input {
-  background-color: $button-color;
+  background-color: rgba(51, 51, 51, 0.867);
   color: white;
 }
 
 div.menu-item {
   display: flex;
   flex-direction: column; /* Column direction to keep description on its own line */
-  // margin-top: 10px;
   padding: 0px 10px;
-  // margin: 10px 0px;
   background-color: white;
 }
 
@@ -260,7 +255,7 @@ p.food {
 }
 
 p.price {
-  background-color: $button-color;
+  background-color: rgba(51, 51, 51, 0.867);
   padding: 5px;
   border-radius: 5px;
   color: white;
@@ -274,7 +269,7 @@ p.price {
   border-radius: 5%;
 }
 
-#content-container{
+#content-container {
   padding: 0 10%;
 }
 
@@ -288,38 +283,25 @@ hr {
   .content h2 {
     font-size: 18vw;
   }
-
   .topnav {
     display: flex;
     flex-direction: column;
   }
-
   #content-menu {
     margin: 0 5%;
   }
-
   #wrapper-about {
     font-size: 1em;
   }
-
   .field-container {
     flex-direction: column;
     justify-content: flex-start !important;
     align-items: normal;
   }
-
-  // form {
-  //   width: 80vw;
-  // }
   input, textarea {
     width: 80vw;
     border: 0;
   }
-
-  // input {
-  //   padding-left: 0 !important;
-  // }
-
   label {
     padding-left: 0px !important;
   }
